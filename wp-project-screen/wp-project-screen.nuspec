@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wp-project-screen</id>
+    <version>1.0.0.2</version>
+    <title>Project My Screen</title>
+    <authors>Microsoft Corporation</authors>
+    <owners>Okhoshi</owners>
+	<licenseUrl>http://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=42536</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>If you want to project your phone screen to an external display but are unable to connect to a wireless device, you can use a USB cable to connect to a Windows device.</description>
+    <summary>Project My Screen App for Windows Phone</summary>
+    <copyright>Microsoft Corporation</copyright>
+    <tags>Windows Phone Screen Project Display</tags>
+  </metadata>
+</package>

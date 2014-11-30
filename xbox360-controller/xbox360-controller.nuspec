@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>xbox360-controller</id>
+    <title>Xbox 360 Controller for Windows</title>
+    <version>{{PackageVersion}}00</version>
+    <authors>Microsoft</authors>
+    <owners>Okhoshi</owners>
+    <summary>Xbox 360 Controller for Windows</summary>
+    <description>The Xbox 360 Controller for Windows delivers a consistent and universal gaming experience across both of Microsoft's gaming systems. Experience the ultimate gaming experience on Windows and Xbox 360.</description>
+    <tags>xbox360-controller driver game</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>http://www.microsoft.com/hardware/fr-be/p/xbox-360-controller-for-windows#support</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

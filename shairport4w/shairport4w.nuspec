@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>shairport4w</id>
+    <title>Shairport for Windows</title>
+    <version>1.0.7.301</version>
+    <authors>Frank Friemel</authors>
+    <owners>Okhoshi</owners>
+    <summary></summary>
+    <description>
+Airtunes emulator. "Shairport" for Windows. Stream music wirelessly to your PC from your iPod/iPad/iPhone/iTunes.
+
+Features:
+- Stream music wirelessly
+- Integrates with iPod/iPad/iPhone/iTunes
+	</description>
+    <projectUrl>http://sourceforge.net/projects/shairport4w/</projectUrl>
+    <tags>shairport4w airplay</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__CHOCO_PKG_MAINTAINER_REPO__/master/icons/shairport4w.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

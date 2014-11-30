@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>openvpn-community</id>
+    <title>OpenVPN Community</title>
+    <version>{{PackageVersion}}</version>
+    <authors>OpenVPN Technologies, Inc</authors>
+    <owners>Okhoshi</owners>
+    <summary>OpenVPN Community Software</summary>
+    <description>
+	OpenVPN is a full-featured open source SSL VPN solution that accommodates a wide range of configurations, including remote access, site-to-site VPNs, Wi-Fi security, and enterprise-scale remote access solutions with load balancing, failover, and fine-grained access-controls. Starting with the fundamental premise that complexity is the enemy of security, OpenVPN offers a cost-effective, lightweight alternative to other VPN technologies that is well-targeted for the SME and enterprise markets.
+	
+	Install with the following options:
+	/SELECT_SHORTCUTS=1              - create the start menu shortcuts
+	/SELECT_OPENVPN=1                - OpenVPN itself
+	/SELECT_SERVICE=1                - install the OpenVPN service
+	/SELECT_TAP=1                    - install the TAP device driver
+	/SELECT_OPENVPNGUI=1             - install the default OpenVPN GUI
+	/SELECT_ASSOCIATIONS=1           - associate with .ovpn files
+	/SELECT_OPENSSL_UTILITIES=1      - install the utilities for generating public-private key pairs
+	/SELECT_EASYRSA=1                - install the RSA X509 certificate management scripts
+	/SELECT_PATH=1                   - add openvpn.exe in PATH
+	/SELECT_OPENSSLDLLS=1            - dependencies - OpenSSL DLL's
+	/SELECT_LZODLLS=1                - dependencies - LZO compressor DLL's
+	/SELECT_PKCS11DLLS=1             - dependencies - PCKS#11 DLL's
+	</description>
+    <projectUrl>https://openvpn.net/index.php/open-source.html</projectUrl>
+    <tags>openvpn community</tags>
+    <copyright>OpenVPN Technologies, Inc</copyright>
+    <licenseUrl>https://openvpn.net/index.php/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://swupdate.openvpn.net/community/icons/ovpntech_key.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="{{PackageVersion}}" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,50 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="265ba432-166d-4a49-8101-5635a31333b9">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>31646288</LastFileSize>
+    <LastFileDate>2014-09-17T06:18:18+02:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;td class="heading"&gt;Version&lt;/td&gt;.*?&lt;td&gt;([0-9.]*?)&lt;/td&gt;</Regex>
+            <Url>http://www.geforce.com/geforce-experience/download</Url>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Chocolatey</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>F:\Chocolatey\_work\GeForce_Experience_v2.1.2.0.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-09-21T15:37:15.4219575+02:00</LastUpdated>
+    <TargetPath>{root}Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>http://uk.download.nvidia.com/GFE/GFEClient/{version}/GeForce_Experience_v{version}.exe</FixedDownloadUrl>
+    <Name>geforce-experience</Name>
+  </ApplicationJob>
+</Jobs>

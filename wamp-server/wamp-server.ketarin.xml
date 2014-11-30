@@ -1,0 +1,150 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="85983991-647b-42b5-a306-15c5d33f7bca">
+    <WebsiteUrl>http://www.wampserver.com/#download-wrapper</WebsiteUrl>
+    <UserAgent>{mozilla}</UserAgent>
+    <UserNotes />
+    <LastFileSize>39917641</LastFileSize>
+    <LastFileDate>2014-05-01T17:10:40+02:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate>2014-07-27T21:06:03</DownloadDate>
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <CanBeShared>false</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer>{sf}</HttpReferer>
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>appcat</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{appname:regexreplace: \(.*\):}</TextualContent>
+            <Name>appcat</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>appfile</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{appname:multireplace:|:(|)| :|_|_}</TextualContent>
+            <Name>appfile</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Download Wampserver \(64 bits.*?\) ([0-9.]*?)"</Regex>
+            <Url>http://www.wampserver.com/en/</Url>
+            <TextualContent>{dirtyversion:multireplace:|:)|#038;:||}</TextualContent>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Problems with the download.*?href="(.+?)"</Regex>
+            <Url>http://sourceforge.net/projects/wampserver/files/WampServer 2/Wampserver {version}/wampserver{version}-{longid}-32b.exe/download</Url>
+            <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>dirtyversion</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>#wampserver-64-bits-.*?Download Wampserver.*?\((.+?)\)</Regex>
+            <Url>http://www.wampserver.com/en/</Url>
+            <TextualContent />
+            <Name>dirtyversion</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>cleanversion</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{dirtyversion:multireplace:|:)|#038;:||}</TextualContent>
+            <Name>cleanversion</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Problems with the download.*?href="(.+?)"</Regex>
+            <Url>http://sourceforge.net/projects/wampserver/files/WampServer 2/Wampserver {version}/wampserver{version}-{longid}-64b.exe/download</Url>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>longid</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>wampserver2.5-(Apache-[0-9.]*-Mysql-[0-9.]*-php[0-9.]*)-</Regex>
+            <Url>http://www.wampserver.com/en/</Url>
+            <Name>longid</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category>Chocolatey</Category>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>F:\Chocolatey\_work\wampserver2.5-Apache-2.4.9-Mysql-5.6.17-php5.5.12-32b.exe</PreviousLocation>
+    <DeletePreviousFile>false</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-09-21T02:13:17.7632749+02:00</LastUpdated>
+    <TargetPath>{root}Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <Name>wamp-server</Name>
+  </ApplicationJob>
+</Jobs>
