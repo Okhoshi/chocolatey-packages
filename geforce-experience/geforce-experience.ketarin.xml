@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>31646288</LastFileSize>
-    <LastFileDate>2014-09-17T06:18:18+02:00</LastFileDate>
+    <LastFileSize>32021112</LastFileSize>
+    <LastFileDate>2014-11-06T20:18:12+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -38,11 +38,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Chocolatey</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>F:\Chocolatey\_work\GeForce_Experience_v2.1.2.0.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\GeForce_Experience_v2.1.4.0.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-09-21T15:37:15.4219575+02:00</LastUpdated>
+    <LastUpdated>2014-12-02T21:50:54.5616278+01:00</LastUpdated>
     <TargetPath>{root}Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://uk.download.nvidia.com/GFE/GFEClient/{version}/GeForce_Experience_v{version}.exe</FixedDownloadUrl>
     <Name>geforce-experience</Name>
