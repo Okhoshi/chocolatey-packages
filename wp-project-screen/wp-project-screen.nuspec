@@ -13,5 +13,10 @@
     <summary>Project My Screen App for Windows Phone</summary>
     <copyright>Microsoft Corporation</copyright>
     <tags>Windows Phone Screen Project Display</tags>
+	<iconUrl>http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/wp-project-screen/icon.png</iconUrl>
+	<releaseNotes>Add icon and validate against the new process</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
