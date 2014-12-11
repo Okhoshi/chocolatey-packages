@@ -62,7 +62,7 @@
     <SourceType>FixedUrl</SourceType>
     <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>true</Enabled>
+    <Enabled>false</Enabled>
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
