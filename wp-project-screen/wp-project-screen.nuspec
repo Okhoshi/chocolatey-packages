@@ -3,7 +3,7 @@
   <metadata>
     <id>wp-project-screen</id>
     <version>1.0.0.2</version>
-    <title>Project My Screen</title>
+    <title>[DEPRECATED] Project My Screen</title>
     <authors>Microsoft Corporation</authors>
     <owners>Okhoshi</owners>
 	<licenseUrl>http://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
@@ -13,10 +13,13 @@
     <summary>Project My Screen App for Windows Phone</summary>
     <copyright>Microsoft Corporation</copyright>
     <tags>Windows Phone Screen Project Display</tags>
-	<iconUrl>http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/wp-project-screen/icon.png</iconUrl>
-	<releaseNotes>Add icon and validate against the new process</releaseNotes>
+	<!--<iconUrl>http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/wp-project-screen/icon.png</iconUrl>-->
+	<releaseNotes>Deprecate</releaseNotes>
+	<dependencies>
+      <dependency id="ProjectMyScreen" version="" />
+    </dependencies>
   </metadata>
-  <files>
+  <!--<files>
     <file src="tools\**" target="tools" />
-  </files>
+  </files>-->
 </package>
