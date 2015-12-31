@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>geforce-experience</id>
     <title>GeForce Experience</title>
     <version>{{PackageVersion}}</version>
@@ -18,17 +17,24 @@ GeForce Experience uses the power of the NVIDIA cloud data center to provide opt
 GeForce ShadowPlay™ is the easiest way to capture your favourite gaming moments. It's also the quickest way to broadcast your game on Twitch. ShadowPlay runs in the background, so you can record or broadcast at any time. And thanks to GPU acceleration, it's so fast you won't even notice it's capturing.
 ##Stream Your Games to NVIDIA® SHIELD™##
 GeForce Experience streams your PC games to the NVIDIA SHIELD gaming portable, so you can play your favourite games around the house or on the go. Jump into Borderlands 2 without getting out of bed. Or pick up where you left off in Skyrim at the local cafe.
-	</description>
+    </description>
     <projectUrl>http://www.geforce.com/geforce-experience</projectUrl>
-    <tags>geforce-experience gaming driver nvidia</tags>
+    <packageSourceUrl>https://github.com/Okhoshi/chocolatey-packages/tree/master/geforce-experience</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>geforce-experience gaming driver nvidia admin</tags>
     <copyright>NVIDIA</copyright>
+    <licenseUrl>http://www.geforce.com/drivers/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/geforce-experience/icon.png</iconUrl>
-	<licenseUrl>http://www.geforce.com/drivers/license</licenseUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/template.png</iconUrl>-->
     <!--<dependencies>
-      <dependency id="" version="{{PackageVersion}}" />
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
     </dependencies>-->
     <releaseNotes></releaseNotes>
+    <!--<provides></provides>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
