@@ -1,7 +1,8 @@
-﻿$packageName = 'geforce-experience' # arbitrary name for the package, used in messages
-$installerType = 'EXE' #only one of these: exe, msi, msu
-$url = '{{DownloadUrl}}' # download url
-$silentArgs = '/s' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
-$validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
+﻿$packageName = 'geforce-experience'
+$installerType = 'EXE'
+$version = '{{PackageVersion}}'
+$url = "http://us.download.nvidia.com/GFE/GFEClient/$version/GeForce_Experience_v$version.exe"
+$silentArgs = '/s'
+$validExitCodes = @(0)
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
