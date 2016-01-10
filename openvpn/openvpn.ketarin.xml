@@ -107,6 +107,21 @@
       </item>
       <item>
         <key>
+          <string>variant</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Vista.*openvpn-install-{version}-(.*?)-</Regex>
+            <Url>https://openvpn.net/index.php/open-source/downloads.html</Url>
+            <TextualContent />
+            <Name>variant</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
           <string>url64</string>
         </key>
         <value>
@@ -114,7 +129,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>"http://swupdate.openvpn.org/community/releases/openvpn-install-{version}-I603-x86_64.exe"</TextualContent>
+            <TextualContent>"http://swupdate.openvpn.org/community/releases/openvpn-install-{version}-{variant}-x86_64.exe"</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -132,7 +147,7 @@
     <FileHippoId />
     <LastUpdated>2014-09-21T19:17:03.0565909+02:00</LastUpdated>
     <TargetPath>{root}Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://swupdate.openvpn.org/community/releases/openvpn-install-{version}-I603-i686.exe</FixedDownloadUrl>
-    <Name>openvpn-community</Name>
+    <FixedDownloadUrl>http://swupdate.openvpn.org/community/releases/openvpn-install-{version}-{variant}-i686.exe</FixedDownloadUrl>
+    <Name>openvpn</Name>
   </ApplicationJob>
 </Jobs>
