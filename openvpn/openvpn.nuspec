@@ -14,11 +14,11 @@
 Install with the following options:
 	/SELECT\_SHORTCUTS=1              - create the start menu shortcuts
 	/SELECT\_OPENVPN=1                - OpenVPN itself
-	/SELECT\_SERVICE=1                - install the OpenVPN service
+	/SELECT\_SERVICE=0                - do not install the OpenVPN service
 	/SELECT\_TAP=1                    - install the TAP device driver
 	/SELECT\_OPENVPNGUI=1             - install the default OpenVPN GUI
 	/SELECT\_ASSOCIATIONS=1           - associate with .ovpn files
-	/SELECT\_OPENSSL_UTILITIES=1      - install the utilities for generating public-private key pairs
+	/SELECT\_OPENSSL_UTILITIES=0      - do not install the utilities for generating public-private key pairs
 	/SELECT\_EASYRSA=1                - install the RSA X509 certificate management scripts
 	/SELECT\_PATH=1                   - add openvpn.exe in PATH
 	/SELECT\_OPENSSLDLLS=1            - dependencies - OpenSSL DLL's
