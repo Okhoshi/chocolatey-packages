@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ProjectMyScreen</id>
+    <title>ProjectMyScreen</title>
+    <version>1.1.0.0</version>
+    <authors>Microsoft Corporation</authors>
+    <owners>Wolfgang Ziegler</owners>
+    <summary>Project My Screen App for Windows Phone</summary>
+    <description>If you want to project your phone screen to an external display but are unable to connect to a wireless device, you can use a USB cable to connect to a Windows device.</description>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=42536</projectUrl>
+    <tags>Windows Phone Screen Project Miracast Wireless Display</tags>
+    <copyright>Microsoft Corporation</copyright>
+    <licenseUrl>http://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<iconUrl>http://cdn.rawgit.com/okhoshi/chocolatey-packages/master/wp-project-screen/icon.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
